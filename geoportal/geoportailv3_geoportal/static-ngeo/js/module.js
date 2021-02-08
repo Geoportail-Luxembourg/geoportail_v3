@@ -32,6 +32,7 @@ import ngeoSearchModule from 'ngeo/search/module.js';
 import ngeoStatemanagerModule from 'ngeo/statemanager/module.js';
 import ngeoStatemanagerWfsPermalinkModule from 'ngeo/statemanager/WfsPermalink.js';
 import MapBoxOffline from './offline/MapboxOffline.js';
+import gmfLayertreeTimeSliderComponent from 'gmf/layertree/timeSliderComponent.js';
 import mockProviderModule, {MockProvider} from './MockProvider.js';
 import angular from 'angular';
 
@@ -63,6 +64,7 @@ const exports = angular.module('Appmain', [
   ngeoQueryModule.name,
   ngeoSearchModule.name,
   ngeoStatemanagerModule.name,
+  gmfLayertreeTimeSliderComponent.name,
   mockProviderModule.name,
   'gettext']).run(function() {
     if (!TOUCH) {
